@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layoutmain"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edt_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fragment communicator"
+        android:gravity="center"
+        android:textSize="30sp"/>
+    <Button
+        android:id="@+id/btn_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change text"/>
+    <fragment
+        android:id="@+id/fragmenta"
+        android:layout_width="match_parent"
+        android:name="com.example.student.demmo_fragment.FragmentA"
+        android:layout_height="wrap_content">
+
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentb"
+        android:layout_width="match_parent"
+        android:name="com.example.student.demmo_fragment.FragmentB"
+        android:layout_height="wrap_content">
+
+    </fragment>
+</LinearLayout>
